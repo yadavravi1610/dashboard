@@ -35,12 +35,11 @@
         @media screen and (max-width:960px) {
             #header {
                 display: none;
+                /* visibility: hidden; */
             }
-
             #menu{
                 display: block;
             }
-
             #ecllipse {
                 display: none;
             }
@@ -48,35 +47,37 @@
     </style>
 </head>
 
-<body class="box-border overflow-x-hidden flex ">
-    
+<body class="box-border flex lg:flex-row flex-col">   
         <div class="xs:block lg:hidden my-5 ml-3 " id="menu">
             <img src="./assets/menu.png" alt="">
         </div>
-        <div class="lg:w-2/6 xl:w-1/6 border-r-2 h-screen flex flex-row lg:flex-col gap-8 items-center py-20" id="header">
-            <h1 class="font-bold text-2xl text-center">NTAS</h1>
-            <div class="flex gap-2">
-                <img class="w-5" src="./assets/DashboardIcon.svg" />
-                <h1 class="text-[#7260A4]">Dashboard</h1>
+        <div class="w-full lg:w-2/6 border-r-2 h-auto lg:h-screen items-center py-0 lg:py-20" id="header">
+            <h1 class="font-bold text-2xl text-center mb-2 lg:mb-10">NTAS</h1>
+            <div class="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center lg:flex-col gap-2 lg:gap-8">
+                <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                    <img class="w-5" src="./assets/DashboardIcon.svg" />
+                    <h1 class="w-32 text-[#7260A4]">Dashboard</h1>
+                </div>
+                <div class="w-30 lg:w-40 text-xs md:text-sm lg:text-base  flex gap-2">
+                    <img class="w-5" src="./assets/mic3.svg" />
+                    <h1 class="w-32 text-[#7260A4]">Audio Consent</h1>
+                </div>
+                <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                    <img class="w-5" src="./assets/Settings1.svg" />
+                    <h1 class="w-32 text-[#7260A4]">Settings</h1>
+                </div>
+                <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                    <img class="w-5" src="./assets/History.svg" />
+                    <h1 class="w-32 text-[#7260A4]">History</h1>
+                </div>
+                <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                    <img class="w-5" src="./assets/Open Pane.svg" />
+                    <h1 class="w-32 text-[#7260A4]">Logout</h1>
+                </div>
             </div>
-            <div class="flex gap-2">
-                <img class="w-5" src="./assets/mic3.svg" />
-                <h1 class="text-[#7260A4]">Audio Consent</h1>
-            </div>
-            <div class="flex gap-2">
-                <img class="w-5" src="./assets/Settings1.svg" />
-                <h1 class="text-[#7260A4]">Settings</h1>
-            </div>
-            <div class="flex gap-2">
-                <img class="w-5" src="./assets/History.svg" />
-                <h1 class="text-[#7260A4]">History</h1>
-            </div>
-            <div class="flex gap-2">
-                <img class="w-5" src="./assets/Open Pane.svg" />
-                <h1 class="text-[#7260A4]">Logout</h1>
-            </div>
+            
         </div>
-        <div id="homescene" class="mt-4 w-5/6 relative h-[30rem] flex flex-col justify-center items-center gap-3">
+        <div id="homescene" class="w-full lg:w-5/6 relative h-[30rem] flex flex-col justify-center items-center gap-3">
                 <div class="flex flex-col gap-2 absolute top-5 items-center right-14">
                 <img class="w-14" src="./assets/UserImage.svg" alt="" />
                 <h1 class="text-base">Hello Olivia!</h1>
