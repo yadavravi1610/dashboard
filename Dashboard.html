@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "320px",
+                        sm: "375px",
+                        sml: "500px",
+                        md: "667px",
+                        mdl: "768px",
+                        lg: "960px",
+                        lgl: "1024px",
+                        xl: "1280px"
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+    #main-image {
+        background-image: url(./assets/DashboardMain.svg);
+        background-size: cover;
+
+    }
+
+        @media screen and (max-width:960px) {
+            #header {
+                display: none;
+            }
+
+            #menu{
+                display: block;
+            }
+
+            #ecllipse {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 py-[8%] lg:py-[5%] box-border overflow-x-hidden ">
+    <div class="w-screen h-4/6 lg:w-[55rem] bg-white rounded-[3rem] mx-0 md:mx-auto flex flex-col lg:flex-row gap-0 md:gap-16 px-0 md:px-2 overflow-x-hidden">
+        <div class="xs:block lg:hidden my-5 ml-3 " id="menu">
+            <img src="./assets/menu.png" alt="">
+        </div>
+        <div class="relative flex flex-row lg:flex-col items-center my-5 ml-3" id="header">
+            <div class="flex w-10 gap-3 ml-4 lg:ml-0 mb-5" id="ecllipse">
+                <img class="w-3" src="./assets/Ellipse.svg" alt="">
+                <img class="w-3" src="./assets/Ellipse.svg" alt="">
+                <img class="w-3" src="./assets/Ellipse.svg" alt="">
+            </div>
+            <div
+                class="w-80 lg:w-24 py-5 lg:py-10 px-7 h-16 lg:h-[30rem] bg-[#6F6AF8] rounded-full flex flex-row lg:flex-col gap-8">
+                <img class="w-10 mx-auto" src="./assets/Home.svg" alt="">
+                <img class="w-10 mx-auto" src="/assets/Settings.svg" alt="">
+                <a href="./Meeting2.html" class="w-8 mx-auto"><img class="w-8 h-8" src="./assets/Mic.svg" alt=""></a>
+                <a href="./Transcript.html" class="w-10 mx-auto"><img class="w-10 h-7" src="./assets/menu.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="mx-auto">
+            <h1 class="font-bold pt-5 text-xl xs:ml-5 lg:ml-0">Hello Olivia!</h1>
+            <div class="w-auto lgl:w-5/6 h-[64vh] flex justify-between mx-auto">
+                <div class="flex flex-col items-end mt-5 gap-10 md:gap-[5rem]">
+                    <h1 class="w-60 h-40 bg-[#B9ADDA] rounded-[3rem] px-2 md:px-7 py-10 font-semibold">Great, you’re
+                        logged in! Click on the audio graph to check the audio!</h1>
+                    <a href="./Meeting.html"> <img src="./assets/mic2.svg"
+                            class="bg-[#B9ADDA] rounded-full w-16 h-10 p-2" alt=""></a>
+                </div>
+                <div class="w-96 -mr-24" id="main-image"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+

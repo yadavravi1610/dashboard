@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "320px",
+                        sm: "375px",
+                        sml: "500px",
+                        md: "667px",
+                        mdl: "768px",
+                        lg: "960px",
+                        lgl: "1024px",
+                        xl: "1280px"
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col">
+    <header class="flex justify-between border-b-2 h-14 xs:px-10 lg:px-20 py-2 z-10 bg-gray-50">
+        <div>
+            <h1 class="font-semibold">Skrit</h1>
+        </div>
+        <div class="flex gap-5 mx-4">
+            <button class="border bg-[#B9B1D0] px-4 py-1 rounded-md"><a href="./Meeting.html">Home</a></button>
+            <button class="border bg-[#B9B1D0] px-4 py-1 rounded-md"><a href="./SignIn.html">Sign in</a></button>
+        </div>
+    </header>
+    <section class="flex xs:my-0 lg:my-20 lgl:my-0 lg:absolute lg:top-0 xs:flex-col-reverse lg:flex-row">
+        <div class="xs:w-[100%] lg:w-[90%] tracking-wider flex flex-col justify-center xs:gap-10 lg:gap-20">
+            <p class="font-sans font-semibold xs:text-2xl lg:text-4xl xs:px-[3rem] lg:px-[5rem] leading-10">Hello! I am
+                your Norwegian AI assistant for your physical<span class="text-[#D09055]"> or teams meetings.</span> I
+                will record your meeting and give you a transcript of it to your email.</p>
+            <a href="./Dashboard.html" class="mx-auto pb-5"><button class="border w-24 h-12 text-white bg-[#9F8FCC] px-4  rounded-md">Log in</button></a>
+        </div>
+        <div class="xs:mb-5 lg:mb-0">
+            <img class="bg-cover xs:h-auto lg:h-screen xs:w-[90rem] lg:w-screen" src="assets/Homepage.svg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

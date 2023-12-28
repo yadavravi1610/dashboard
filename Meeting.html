@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "320px",
+                        sm: "375px",
+                        sml: "500px",
+                        md: "667px",
+                        mdl: "768px",
+                        lg: "960px",
+                        lgl: "1024px",
+                        xl: "1280px"
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        #homescene {
+            background-image: url(./assets/Meeting2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        @media screen and (max-width:960px) {
+            #header {
+                display: none;
+            }
+
+            #menu {
+                display: block;
+            }
+
+            #ecllipse {
+                display: none;
+            }
+
+            #close {
+                display: block;
+            }
+        }
+
+        /* @media screen and (min-width:960px){
+            #close{
+                display: none;
+            }
+        } */
+    </style>
+</head>
+
+<body class="box-border overflow-x-hidden flex">
+    <div class="xs:block lg:hidden my-5 ml-3 " id="menu">
+        <img src="./assets/menu.png" alt="">
+    </div>
+        <div class="w-2/6 border-r-2 lg:h-screen flex flex-row lg:flex-col gap-8 items-center py-20" id="header">
+            <h1 class="font-bold text-2xl text-center">NTAS</h1>
+            <div class="flex gap-2">
+                <img class="w-5" src="./assets/DashboardIcon.svg" />
+                <h1 class="text-[#7260A4]">Dashboard</h1>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-5" src="./assets/mic3.svg" />
+                <h1 class="text-[#7260A4]"><a href="./Meeting2.html">Audio Consent</a></h1>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-5" src="./assets/Settings1.svg" />
+                <h1 class="text-[#7260A4]">Settings</h1>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-5" src="./assets/History.svg" />
+                <h1 class="text-[#7260A4]">History</h1>
+            </div>
+            <div class="flex gap-2">
+                <img class="w-5" src="./assets/Open Pane.svg" />
+                <h1 class="text-[#7260A4]">Logout</h1>
+            </div>
+        </div>
+
+        <div class="w-5/6 flex flex-col items-center justify-center">
+            <div class="flex gap-2 absolute top-16 md:top-5 items-center md:right-14">
+                <div class="w-52 bg-[#CABCF4] flex items-center rounded-full py-1 px-3">
+                    <img class="w-8" src="./assets/Search.svg"/>
+                    <h1 class="text-[#7260A4] text-lg">search</h1>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <img class="w-14" src="./assets/UserImage.svg" alt="" />
+                    <h1 class="text-xs md:text-base">Hello Olivia!</h1>
+                </div>    
+            </div>
+            <!-- <h1 class="font-bold pt-5 text-xl xs:ml-5 lg:ml-0">Hello Olivia!</h1> -->
+            <div class="flex xs:flex-col md:flex-row justify-around mt-44 lg:mt-10 gap-20 w-[80vw]">
+                <div class="w-[20rem] flex flex-col gap-3">
+                    <div
+                        class="bg-[#363145] w-80 md:w-52 lg:w-80 h-60 md:h-80 flex flex-col justify-center items-center rounded-[5rem]">
+                        <img src="./assets/PhysicalMeeting.svg" class="w-40" alt="">
+                        <h1 class="text-3xl text-white text-center">Physical meeting</h1>
+                    </div>
+                    <!-- <img src="./assets/MeetingEllipse.svg" class="w-80 md:w-52 lg:w-80" alt=""> -->
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div
+                        class="bg-white w-80 border border-black md:w-52 lg:w-80 h-60 md:h-80 flex flex-col justify-center items-center rounded-[5rem]">
+                        <h1 class="text-2xl  text-center px-2">Invite Microsoft AI to your meeting</h1>
+                        <img src="./assets/Computer.svg" class="w-40 lg:w-52" alt="">
+                    </div>
+                    <!-- <img src="./assets/MeetingEllipse.svg" class="w-80 md:w-52 lg:w-80" alt=""> -->
+                </div>
+            </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
