@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Logout</title>
+    <title>Settings</title>
     <script>
         tailwind.config = {
             theme: {
@@ -72,35 +72,31 @@
         </div>
 
     </div>
-    <div class="w-5/6 flex flex-col items-center justify-center">
-        <div class="flex gap-2 absolute top-28 lg:top-16 md:top-20 lg:top-5 ml-10 items-center md:right-14">
-            <div class="w-52 bg-[#CABCF4] flex items-center rounded-full py-1 px-3">
-                <img class="w-8" src="./assets/Search.svg" />
-                <h1 class="text-[#7260A4] text-lg">search</h1>
+    <div class="w-full mdl:w-5/6 flex justify-center">
+        <div class="w-full mdl:w-5/6 border border-[#C2ADFF] rounded-3xl my-5 mdl:my-20 pb-10 pl-2 mdl:pl-10 pt-10 flex flex-col gap-10">
+            <h1 class="font-bold text-3xl">Account Settings</h1>
+            <div class="flex flex-col lg:flex-row gap-24 justify-center items-center">
+                <div class="flex flex-col justify-center items-center">
+                   <img src="./assets/UserImage2.svg" alt=""/>
+                   <h1 class="font-medium w-28 text-center">change profile photo</h1> 
+                </div>
+                <div class="flex flex-wrap w-full sm:w-[80%] mdl:w-[60%] lg:w-[50%] gap-5 justify-center">
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">first name</div>
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">last name</div>
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">mobile no</div>
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">email</div>
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">organization</div>
+                    <div class="w-32 xl:w-48 bg-[#7260A4] h-8 text-white rounded-full px-2 py-1">job title</div>
+                    <button class="w-24 h-8 rounded-full px-2 py-1 border border-black">submit</button>
+                </div>
             </div>
-            <div class="flex flex-col gap-2 items-center">
-                <img class="w-14" src="./assets/UserImage.svg" alt="" />
-                <h1 class="text-xs md:text-base">Hello Olivia!</h1>
-            </div>
-        </div>
-        <div class="w-5/6 mt-32 flex flex-col gap-10">
-            <div class="w-full flex justify-between flex-wrap text-center gap-2">
-                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">write</div>
-                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">edit</div>
-                <div class="w-28 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">save changes</div>
-                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">share</div>
-            </div>
-            <div class=" h-auto lg:min-h-[22rem]  bg-white border border-black rounded-[8rem] px-12 py-12">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum ipsam totam sit.
-                    Repellendus quaerat eum mollitia, aliquam nobis ab veritatis labore! Eius enim perspiciatis quia
-                    esse dicta dolore rerum et, nostrum odit harum natus quam. Beatae nihil quaerat illo ex odit alias
-                    commodi iure magnam cumque. Itaque nesciunt, suscipit recusandae commodi quas sapiente sint eaque
-                    distinctio dolore animi obcaecati, atque autem nihil magni totam qui delectus ex fuga labore,
-                    eligendi amet eius mollitia! Provident aspernatur maiores at cupiditate qui sunt blanditiis, error
-                    odit officiis adipisci quaerat corrupti id veritatis impedit accusamus repellendus iusto voluptatem
-                    quos suscipit! Fugiat, quaerat ullam?</h1>
+            <h1 class="font-bold text-3xl">Passwords</h1>
+            <div class="flex justify-around w-[80%] flex-col gap-5 mdl:flex-row">
+                <div class="w-48 border border-black rounded-full px-2 py-1 h-8">forget password?</div>
+                <div class="w-48 border border-black rounded-full px-2 py-1 h-8">change password?</div>
             </div>
         </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
