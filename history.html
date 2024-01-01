@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>History</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "320px",
+                        sm: "375px",
+                        sml: "500px",
+                        md: "667px",
+                        mdl: "768px",
+                        lg: "960px",
+                        lgl: "1024px",
+                        xl: "1280px"
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @media screen and (max-width:960px) {
+            #header {
+                display: none;
+                /* visibility: hidden; */
+            }
+
+            #menu {
+                display: block;
+            }
+
+            #ecllipse {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="box-border flex lg:flex-row flex-col">
+    <div class="xs:block lg:hidden my-5 ml-3 " id="menu">
+        <img src="./assets/menu.png" alt="">
+    </div>
+    <div class="w-full lg:w-2/6 border-r-2 h-auto lg:h-screen items-center py-0 lg:py-20" id="header">
+        <h1 class="font-bold text-2xl text-center mb-2 lg:mb-10">NTAS</h1>
+        <div class="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center lg:flex-col gap-2 lg:gap-8">
+            <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                <img class="w-5" src="./assets/DashboardIcon.svg" />
+                <h1 class="w-32 text-[#7260A4]"><a href="./Meeting.html">Dashboard</a></h1>
+            </div>
+            <div class="w-30 lg:w-40 text-xs md:text-sm lg:text-base  flex gap-2">
+                <img class="w-5" src="./assets/mic3.svg" />
+                <h1 class="w-32 text-[#7260A4]"><a href="./Meeting2.html">Audio Consent</a></h1>
+            </div>
+            <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                <img class="w-5" src="./assets/Settings1.svg" />
+                <h1 class="w-32 text-[#7260A4]"><a href="./SettingPage.html">Settings</a></h1>
+            </div>
+            <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                <img class="w-5" src="./assets/History.svg" />
+                <h1 class="w-32 text-[#7260A4]"><a href="./Transcript.html">History</a></h1>
+            </div>
+            <div class="w-24 lg:w-40 text-xs md:text-sm lg:text-base flex gap-2">
+                <img class="w-5" src="./assets/Open Pane.svg" />
+                <h1 class="w-32 text-[#7260A4]"><a href="./Logout.html">Logout</a></h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-full lg:w-5/6 flex flex-col items-center justify-center">
+        <div class="flex gap-2 absolute top-28 lg:top-16 md:top-20 lg:top-5 ml-10 items-center md:right-14">
+            <div class="w-52 bg-[#CABCF4] flex items-center rounded-full py-1 px-3">
+                <img class="w-8" src="./assets/Search.svg" />
+                <h1 class="text-[#7260A4] text-lg">search</h1>
+            </div>
+            <div class="flex flex-col gap-2 items-center">
+                <img class="w-14" src="./assets/UserImage.svg" alt="" />
+                <h1 class="text-xs md:text-base">Hello Olivia!</h1>
+            </div>
+        </div>
+        <div class="w-full lg:w-5/6 mt-32 flex flex-col gap-10">
+            <div class="w-full flex justify-between flex-wrap text-center gap-2 text-sm lg:text-base">
+                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">Date</div>
+                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">Meeting Type</div>
+                <div class="w-28 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">transcript</div>
+                <div class="w-24 md:text-sm md:text-base md:w-32 border border-black rounded-full px-2 py-1">Time</div>
+            </div>
+            <div class=" h-auto  bg-white border border-black flex flex-col text-left gap-4 rounded-[2rem] px-2 text-sm lg:text-base lg:px-12 py-12">
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>22/12/2023</h1>
+                    <h1>Physical Meeting</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/greenDot.svg" alt=""/>
+                        <h1>prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>22/12/2023</h1>
+                    <h1>Microsoft Teams</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/greenDot.svg" alt=""/>
+                        <h1>prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>26/01/2023</h1>
+                    <h1>Physical Meeting</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/redDot.svg" alt=""/>
+                        <h1>not prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>22/01/2023</h1>
+                    <h1>Physical Meeting</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/greenDot.svg" alt=""/>
+                        <h1>prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>23/10/2024</h1>
+                    <h1>Mic. AI</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/greenDot.svg" alt=""/>
+                        <h1>prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+                <div class="flex justify-between items-center border-b-2 flex-wrap">
+                    <h1>24/05/2023</h1>
+                    <h1>Physical Meeting</h1>
+                    <div class="flex gap-2">
+                        <img src="./assets/redDot.svg" alt=""/>
+                        <h1>not prepared</h1>
+                    </div>
+                    <h1>5:40 pm to 6:30</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
