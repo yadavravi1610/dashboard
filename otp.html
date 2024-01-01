@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sign In</title>
+    <title>OTP</title>
     <script>
         tailwind.config = {
             theme: {
@@ -28,13 +28,22 @@
 
 <body class="bg-[#7260A4] flex py-[6%] justify-center gap-32">
     <div class="w-96 xs:hidden lg:block">
-        <img class="w-96" src="./assets/SignIn.svg" alt=""/>
+        <img class="w-96" src="./assets/Otp.svg" alt="" />
     </div>
-    <div class="w-96 bg-gray-200 rounded-[4rem] flex flex-col justify-center py-10 gap-10 items-center ">
-        <div class="bg-[#363145] text-white w-40 text-center h-9 rounded-full py-1" >Email</div>
-        <div class="bg-[#363145] text-white w-40 text-center h-9 rounded-full py-1">Password</div>
+    <div class="w-96 bg-gray-200 rounded-[4rem] flex flex-col justify-start py-10 gap-10 items-center ">
+        <h1>Enter your phone number</h1>
+        <div class="bg-[#363145] text-white w-40 text-center h-9 rounded-full py-1">+91777745231</div>
+        <div class="flex flex-col gap-4">
+            <h1>Otp sent on 985494212</h1>
+            <div class="flex gap-2">
+                <div class="w-10 h-10 border border-black"></div>
+                <div class="w-10 h-10 border border-black"></div>
+                <div class="w-10 h-10 border border-black"></div>
+                <div class="w-10 h-10 border border-black"></div>
+            </div>
+        </div>
         <div class="bg-[#363145] text-white w-24 text-center h-8 rounded-full py-1">Confirm</div>
-        <h1>Forgot your password?</h1>
+        <h1>Resend the otp</h1>
     </div>
 </body>
 
